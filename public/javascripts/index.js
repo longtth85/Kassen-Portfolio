@@ -12,7 +12,7 @@ $(function () {
         };
 
     });
-
+    $(".footer").load("footer.html");
 });
 
 function videoLoad(id) {
