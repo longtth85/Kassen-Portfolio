@@ -3,10 +3,10 @@ const index = ["gone", "jns", "experimental", "livate", "encore",
 "grater", "devil", "showreel", "gh4", "midsummer", "2014"];
 
 // Titles for additional videos page
-const addVideos = ["test"];
+const addVideos = ["drimmedua", "deilig"];
 
 // Titles for vfx page
-const vfx = ["test"];
+const vfx = ["ojeheianne", "rybak", "shoo"];
 
 // Titles for graphics page
 const graphics = ["test"];
