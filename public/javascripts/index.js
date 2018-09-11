@@ -1,5 +1,20 @@
-let titles = ["gone", "jns", "experimental", "livate", "encore",
+// Titles for videos page
+const index = ["gone", "jns", "experimental", "livate", "encore",
 "grater", "devil", "showreel", "gh4", "midsummer", "2014"];
+
+// Titles for additional videos page
+const addVideos = ["test"];
+
+// Titles for vfx page
+const vfx = ["test"];
+
+// Titles for graphics page
+const graphics = ["test"];
+
+let path = window.location.pathname;
+let pathTitle = path.substring(path.lastIndexOf("/") + 1, path.lastIndexOf("."));
+
+let titles = eval(pathTitle);
 // This function loads and injects all the repeatable elements
 $(function () {
     $(".nav").load("navbar.html");
