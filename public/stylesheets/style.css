@@ -113,6 +113,12 @@ ul li a {
 ******/
 .video {
   text-align: center;
+  padding-bottom: 1em;
+}
+
+iframe {
+  display: inline-block;
+  padding-bottom: 1em;
 }
 
 /******
@@ -122,8 +128,11 @@ ul li a {
   text-align: center;
 }
 
-iframe {
-  display: inline-block;
+#headshot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1em;
 }
 
 /*******
