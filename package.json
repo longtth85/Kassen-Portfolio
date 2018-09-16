@@ -1,0 +1,35 @@
+{
+  "name": "kassen",
+  "version": "1.0.0",
+  "description": "ola kassen portfolio",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "gh-pages": "^1.2.0",
+    "jquery": "^3.3.1",
+    "webpack-cli": "^3.1.0",
+    "webpack": "^4.17.1",
+    "express": "^4.16.3",
+    "cookie-parser": "^1.4.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "deploy": "npm run build&&gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longtth85/Kassen-Portfolio.git"
+  },
+  "author": "Long Thanh Thai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/longtth85/Kassen-Portfolio/issues"
+  },
+  "homepage": "https://longtth85.github.io/Kassen-Portfolio/"
+}
