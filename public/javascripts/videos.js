@@ -13,12 +13,10 @@ const graphics = ["test"];
 
 let path = window.location.pathname;
 let pathTitle = path.substring(path.lastIndexOf("/") + 1, path.lastIndexOf("."));
-console.log(pathTitle);
 
 let titles = [];
 if (pathTitle === "/"){
     titles = index;
-    console.log(titles);
 }else {
     titles = eval(pathTitle);
 }
@@ -35,19 +33,22 @@ $(function () {
     });
 });
 
-function videoLoad(id) {
+
+
+$(document).on("click", ".overlay", function () {
+    console.log("working");
     let text = $("h2").text().split(" ");
     let test = text[0].toLowerCase();
     // If the video has already been loaded then there is no need to reload it
-    if (id === test){
+    if (this.id === test){
         return false
     }
     // Load the target html into the div with class video and scroll to the video
     else {
-        $(".video").load("work/" + id + ".html");
+        $(".video").load("work/" + this.id + ".html");
 
         $('html, body').animate({
             scrollTop: $("div.video").offset().top
         }, 500);
     }
-};
+});
