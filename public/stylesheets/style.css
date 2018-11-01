@@ -5,8 +5,8 @@
 }
 
 body {
-  padding: 50px;
-  font: 20px bebas, sans-serif;
+  padding: 1vw;
+  font: 30px bebas, sans-serif;
 }
 
 header {
@@ -84,11 +84,19 @@ ul li a {
     .grid-container{
         grid-template-columns: auto auto;
     }
+
+    body{
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .grid-container{
         grid-template-columns: auto;
+    }
+
+    body{
+        font-size: 20px;
     }
 }
 
@@ -99,6 +107,7 @@ ul li a {
     padding: 0;
     text-align: center;
     height: 200px;
+    cursor: pointer;
 }
 
 .overlay {
@@ -121,7 +130,6 @@ ul li a {
 .grid-item:hover .overlay {
   background: rgba(0, 0, 0, 0.8);
   color: rgba(255, 255, 255, 1);
-  cursor: pointer;
 }
 
 .overlay-img{
