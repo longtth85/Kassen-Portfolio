@@ -1,37 +1,88 @@
-## Welcome to GitHub Pages
+# Portfolio Tutorial
 
-You can use the [editor on GitHub](https://github.com/longtth85/Kassen-Portfolio/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Folder Structure(important folders are BOLD)
+```
+|Kassen-Portfolio
+|
+|
++---bin
++---docs
++---node_modules
++---PUBLIC
+|   |
+|   |
+|   \---JAVASCRIPTS
+|   +---STATIC
+|   +---stylesheets
+|   +---WORK
+```
+### Adding Thumbnails
+##### The important folders here are static and work.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Make sure the pictures are in a .png format and that the filename is the same as the
+corresponding html file in the **work** folder.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+Example: the picture kassen.png corresponds to kassen.html
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Drop the .png file in the **static** folder.
 
-### Jekyll Themes
+**That's it!**
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/longtth85/Kassen-Portfolio/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Adding Thumbnails
+##### The important folders here are javascripts and work.
 
-### Support or Contact
+Get the embed code and create a new html file in the work folder.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+HTML template for youtube videos:
+```
+<h2>Alexander Rybak - That's how you write a song</h2>
+
+<div class="img-container">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SixPA1jhynE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<p>
+    <ul>
+        <li>Animator: Ola Kassen</li>
+    </ul>
+</p>
+```
+HTML template for vimeo videos:
+```
+<h2>JNS - SPILL</h2>
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/251146229" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/251146229">JNS - SPILL</a> from <a href="https://vimeo.com/olakassen">Ola Kassen</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p>//<br />
+    <br />
+    Directed, shot, edited, VFX by @OLAKASSEN<br />
+    Main idea by JNS<br />
+    Animator: David Bjornstad<br />
+    Thanks to Carl Amadou Seck, Jimmy Moen &amp; Erland Skui</p>
+```
+
+Now you have to edit the **index.js** file inside the **javascripts** folder.
+
+```
+// Titles for videos page
+const index = ["gone", "jns", "experimental", "livate", "encore",
+    "grater", "devil", "showreel", "gh4", "midsummer", "2014"];
+
+// Titles for additional videos page
+const addVideos = ["drimmedua", "deilig"];
+
+// Titles for vfx page
+const vfx = ["ojeheianne", "rybak", "shoo"];
+
+// Titles for graphics page
+const graphics = ["test"];
+```
+
+Add the html filename to the list you want.
+
+```
+Example: "gone" and "jns" in the index list corresponds to gone.html and jns.html in
+the work folder
+```
