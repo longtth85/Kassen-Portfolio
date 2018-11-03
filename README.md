@@ -30,7 +30,7 @@ Drop the .png file in the **static** folder.
 
 **That's it!**
 
-### Adding Thumbnails
+### Adding New Videos
 ##### The important folders here are javascripts and work.
 
 Get the embed code and create a new html file in the work folder.
