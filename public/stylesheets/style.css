@@ -59,9 +59,14 @@ ul li:hover ul {
   padding: 5px;
 }
 
-ul li a {
-  color: #9198a3;
-  text-decoration: none;
+ul li{
+    padding: 0;
+    margin: 0;
+}
+
+ul li a{
+    color: #9198a3;
+    text-decoration: none;
 }
 
 .active, ul li a:hover {
