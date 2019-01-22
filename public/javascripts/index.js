@@ -6,16 +6,7 @@ $(function () {
 
 // Titles for videos page
 const index = ["gone", "jns", "experimental", "livate", "encore",
-    "grater", "devil", "showreel", "gh4", "midsummer", "2014"];
-
-// Titles for additional videos page
-const addVideos = ["drimmedua", "deilig"];
-
-// Titles for vfx page
-const vfx = ["ojeheianne", "rybak", "shoo"];
-
-// Titles for graphics page
-const graphics = ["test"];
+    "grater", "devil", "showreel", "gh4", "midsummer", "2014", "drimmedua", "deilig", "ojeheianne", "rybak", "shoo"];
 
 let path = window.location.pathname;
 let pathTitle = path.substring(path.lastIndexOf("/") + 1, path.lastIndexOf("."));

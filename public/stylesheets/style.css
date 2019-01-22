@@ -6,18 +6,23 @@
 
 body {
   padding: 1vw;
-  font: 30px bebas, sans-serif;
+  font: 1em bebas, sans-serif;
 }
 
 header {
   top: 80px;
-  padding-bottom: 3vw;
+  padding-bottom: 2vw;
 }
 
 h1 a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
+  font-size: 2em;
+}
+
+h2{
+    text-align: center;
 }
 /*******
 *Navbar*
@@ -56,17 +61,20 @@ ul li:hover ul {
 }
 
 ul li{
-    padding: 0;
+    padding: 0 10px 0 10px;
     margin: 0;
 }
 
 ul li a{
     color: #9198a3;
     text-decoration: none;
+    opacity: 0.8;
+    font-size: 1.5em;
 }
 
 .active, ul li a:hover {
   color: #303133;
+    opacity: 1.0;
 }
 
 /*****
@@ -85,19 +93,11 @@ ul li a{
     .grid-container{
         grid-template-columns: auto auto;
     }
-
-    body{
-        font-size: 30px;
-    }
 }
 
 @media screen and (max-width: 576px) {
     .grid-container{
         grid-template-columns: auto;
-    }
-
-    body{
-        font-size: 20px;
     }
 }
 
@@ -159,8 +159,9 @@ ul li a{
     height: 100%;
 }
 
-.video{
-    text-align: center;
+p{
+    margin: 0 auto 0 auto;
+    width: 15em;
 }
 /******
 *About*
