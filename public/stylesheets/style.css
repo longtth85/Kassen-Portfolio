@@ -178,6 +178,7 @@ ul li a{
     display: flex;
     margin: 0 auto 0 auto;
     width: 50%;
+    flex-wrap: wrap;
 }
 
 .about div, .about img{
