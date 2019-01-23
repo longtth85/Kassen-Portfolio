@@ -175,7 +175,14 @@ ul li a{
 *About*
 ******/
 .about {
-  text-align: center;
+  display: flex;
+    margin: 0 auto 0 auto;
+    width: 50%;
+}
+
+.about div, .about img{
+    padding: 0;
+    margin: 0 auto 0 auto;
 }
 
 #headshot {
