@@ -186,12 +186,28 @@ ul li a{
 }
 
 #headshot {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+    height: 350px;
+    width: 290px;
 }
 
+.verticalFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+
+#description{
+    flex-grow: 2;
+}
+
+#titles, #titles, #description{
+    padding: inherit;
+}
 /*******
 *Footer*
 *******/
