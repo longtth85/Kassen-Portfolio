@@ -175,7 +175,7 @@ ul li a{
 *About*
 ******/
 .about {
-  display: flex;
+    display: flex;
     margin: 0 auto 0 auto;
     width: 50%;
 }
@@ -198,15 +198,20 @@ ul li a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0;
 }
 
 #description{
     flex-grow: 2;
 }
 
-#titles, #titles, #description{
-    padding: inherit;
+#titles, #info, #description{
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#titles{
+    color: #9198a3;
+    opacity: 0.6;
 }
 /*******
 *Footer*
