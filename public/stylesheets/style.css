@@ -126,7 +126,7 @@ ul li a{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font: 3em bebas, sans-serif;
+    font: 1em Helvetica, bebas, sans-serif;
 }
 
 .grid-item:hover .overlay {

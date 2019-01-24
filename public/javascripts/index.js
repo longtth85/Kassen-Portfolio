@@ -5,8 +5,8 @@ $(function () {
 });
 
 // Titles for videos page
-const index = ["gone", "jns", "experimental", "livate", "encore",
-    "grater", "devil", "showreel", "gh4", "midsummer", "2014", "drimmedua", "deilig", "ojeheianne", "rybak", "shoo"];
+const index = ["gone", "Jns - Spill(Music Video)", "experimental", "livate", "encore",
+    "grater", "devil", "showreel", "gh4", "midsummer", "2014", "Madcon - Drimmedua(Music Video)", "deilig", "ojeheianne", "rybak", "shoo"];
 
 let path = window.location.pathname;
 let pathTitle = path.substring(path.lastIndexOf("/") + 1, path.lastIndexOf("."));
