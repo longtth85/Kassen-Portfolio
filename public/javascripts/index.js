@@ -5,11 +5,17 @@ $(function () {
 });
 
 // Titles for videos page
-const index = ["gone", "Jns - Spill(Music Video)", "experimental", "livate", "encore",
-    "grater", "devil", "showreel", "gh4", "midsummer", "2014", "Madcon - Drimmedua(Music Video)", "deilig", "ojeheianne", "rybak", "shoo"];
+const index = ["Gone Forever - The Thor Thorsen(Music Video)", "Jns - Spill(Music Video)",
+    "EXPERIMENTAL", "LIVATE - THE DAY(Music Video)", "JNS - GRÅTER UTEN TÅRER(Music Video)",
+    "I SAW THE DEVIL IN MIAMI...(EXPERIMENTAL)", "OLA KASSEN - SHOWREEL 2016", "DISTORTED LIFESTLYE - GH4",
+    "SWEDISH MIDSUMMER LOS 2015 (OFFICIAL AFTERMOVIE)", "2014",
+    "Madcon - Drimmedua(Music Video)", "Erik Og Kriss - Leker deilig", "GinoBless - Ojeheianne(Music Video)",
+    "Alexander Rybak - That's how you write a song(Music Video)", "Madcon - Shoo og Ting & Tang ft. Arif(Music Video)"];
 
 let path = window.location.pathname;
+console.log(path);
 let pathTitle = path.substring(path.lastIndexOf("/") + 1, path.lastIndexOf("."));
+console.log(pathTitle);
 
 let titles = [];
 if (pathTitle === "/"){
