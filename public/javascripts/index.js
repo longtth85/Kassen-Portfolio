@@ -31,7 +31,8 @@ $(function () {
             let $response = $("<div />").html(data);
             $response.find(".overlay").attr("id", titles[i]);
             $response.find(".overlay-text").text(titles[i]);
-            $response.find(".grid-item").css("background-image", "url(static/"+titles[i]+".png)");
+            let text = encodeURIComponent(titles[i]);
+            $response.find(".grid-item").css("background-image", "url(static/"+text+".png)");
             $(".grid-container").append($response);
         };
     });
@@ -40,11 +41,12 @@ $(function () {
 
 
 $(document).on("click", ".overlay", function () {
-    /*console.log("working");
-    let text = $("h2").text().split(" ");
-    let test = text[0].toLowerCase();*/
-    /*let test = $("h2").text();
-    console.log(test);*/
+    console.log("working");
+    /*let text = $("h2").text().split(" ");*/
+    /*let test = text[0].toLowerCase();*/
+    console.log("url(static/"+encodeURIComponent(titles[0])+".png)")
+    let test = $("h2").text();
+    console.log(test);
     let text = "work/" + this.id +".html";
 
     // If the video has already been loaded then there is no need to reload it
