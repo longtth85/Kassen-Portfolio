@@ -5,12 +5,13 @@ $(function () {
 });
 
 // Titles for videos page
-const index = ["Gone Forever - The Thor Thorsen(Music Video)", "Jns - Spill(Music Video)",
-    "EXPERIMENTAL", "LIVATE - THE DAY(Music Video)", "JNS - GRÅTER UTEN TÅRER(Music Video)",
+const index = ["Alexander Rybak - That's how you write a song(Music Video)", "Madcon - Drimmedua(Music Video)",
+    "Madcon - Shoo og Ting & Tang ft. Arif(Music Video)",
+    "Gone Forever - The Thor Thorsen(Music Video)", "Jns - Spill(Music Video)", "EXPERIMENTAL",
+    "LIVATE - THE DAY(Music Video)", "JNS - GRÅTER UTEN TÅRER(Music Video)",
     "I SAW THE DEVIL IN MIAMI...(EXPERIMENTAL)", "OLA KASSEN - SHOWREEL 2016", "DISTORTED LIFESTLYE - GH4",
     "SWEDISH MIDSUMMER LOS 2015 (OFFICIAL AFTERMOVIE)", "2014",
-    "Madcon - Drimmedua(Music Video)", "Erik Og Kriss - Leker deilig", "GinoBless - Ojeheianne(Music Video)",
-    "Alexander Rybak - That's how you write a song(Music Video)", "Madcon - Shoo og Ting & Tang ft. Arif(Music Video)"];
+     "Erik Og Kriss - Leker deilig", "GinoBless - Ojeheianne(Music Video)"];
 
 let path = window.location.pathname;
 console.log(path);
