@@ -40,16 +40,21 @@ $(function () {
 
 
 $(document).on("click", ".overlay", function () {
-    console.log("working");
+    /*console.log("working");
     let text = $("h2").text().split(" ");
-    let test = text[0].toLowerCase();
+    let test = text[0].toLowerCase();*/
+    /*let test = $("h2").text();
+    console.log(test);*/
+    let text = "work/" + this.id +".html";
+
     // If the video has already been loaded then there is no need to reload it
     if (this.id === test){
         return false
     }
     // Load the target html into the div with class video and scroll to the video
     else {
-        $(".video").load("work/" + this.id + ".html");
+        /*$(".video").load("work/" + test1 + ".html");*/
+        $(".video").load(encodeURIComponent(text));
 
         $('html, body').animate({
             scrollTop: $("div.video").offset().top
