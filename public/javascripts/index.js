@@ -32,8 +32,7 @@ $(function () {
             let $response = $("<div />").html(data);
             $response.find(".overlay").attr("id", titles[i]);
             $response.find(".overlay-text").text(titles[i]);
-            let text = encodeURIComponent(titles[i]);
-            $response.find(".grid-item").css("background-image", "url(static/"+text+".png)");
+            $response.find(".grid-item").css("background-image", "url("+"'static/"+encodeURI(titles[i])+".png')");
             $(".grid-container").append($response);
         };
     });
