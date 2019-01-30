@@ -1,8 +1,10 @@
 // This function loads and injects all the repeatable elements
+
 $(function () {
     $(".nav").load("navbar.html");
     $(".footer").load("footer.html");
 });
+
 
 // Titles for videos page
 const index = ["Alexander Rybak - That's how you write a song(Music Video)", "Madcon - Drimmedua(Music Video)",
@@ -38,15 +40,9 @@ $(function () {
     });
 });
 
-
+let test = "";
 
 $(document).on("click", ".overlay", function () {
-    console.log("working");
-    /*let text = $("h2").text().split(" ");*/
-    /*let test = text[0].toLowerCase();*/
-    console.log("url(static/"+encodeURIComponent(titles[0])+".png)")
-    let test = $("h2").text();
-    console.log(test);
     let text = "work/" + this.id +".html";
 
     // If the video has already been loaded then there is no need to reload it
@@ -61,5 +57,6 @@ $(document).on("click", ".overlay", function () {
         $('html, body').animate({
             scrollTop: $("div.video").offset().top
         }, 500);
+        test = this.id;
     }
 });
